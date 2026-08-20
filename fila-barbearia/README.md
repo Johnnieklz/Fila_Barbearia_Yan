@@ -29,14 +29,14 @@ painel mobile-first.
 
 ## Stack utilizada
 
-| Camada      | Tecnologia                                        |
-| ----------- | ------------------------------------------------- |
-| Frontend    | Next.js 14 (App Router), React, TypeScript        |
-| Estilização | Tailwind CSS                                      |
-| Backend     | Supabase (PostgreSQL, Auth, Realtime, RLS)        |
-| Testes      | Vitest                                            |
-| QR Code     | `qrcode.react`                                    |
-| PWA         | Web App Manifest + ícones (instalável no celular) |
+| Camada          | Tecnologia                                   |
+| --------------- | --------------------------------------------- |
+| Frontend        | Next.js 14 (App Router), React, TypeScript     |
+| Estilização     | Tailwind CSS                                   |
+| Backend         | Supabase (PostgreSQL, Auth, Realtime, RLS)     |
+| Testes          | Vitest                                         |
+| QR Code         | `qrcode.react`                                 |
+| PWA             | Web App Manifest + ícones (instalável no celular) |
 
 ## Estrutura do projeto
 
