@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    @apply bg-ink-950 text-cream font-body antialiased;
+  }
+
+  ::selection {
+    @apply bg-gold-500/30 text-cream;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex w-full items-center justify-center gap-2 rounded-card
+      bg-gold-500 px-6 py-4 text-base font-semibold tracking-wide text-ink-950
+      shadow-soft transition active:scale-[0.98] active:bg-gold-600
+      disabled:cursor-not-allowed disabled:opacity-50;
+  }
+
+  .btn-danger {
+    @apply inline-flex w-full items-center justify-center gap-2 rounded-card
+      bg-pole-red px-6 py-4 text-base font-semibold tracking-wide text-cream
+      shadow-soft transition active:scale-[0.98]
+      disabled:cursor-not-allowed disabled:opacity-50;
+  }
+
+  .btn-secondary {
+    @apply inline-flex w-full items-center justify-center gap-2 rounded-card
+      border border-ink-700 bg-ink-900 px-6 py-4 text-base font-medium
+      text-cream transition active:scale-[0.98] active:bg-ink-800
+      disabled:cursor-not-allowed disabled:opacity-50;
+  }
+
+  .surface-card {
+    @apply rounded-card border border-ink-700 bg-ink-900 p-5 shadow-soft;
+  }
+
+  .field-input {
+    @apply w-full rounded-2xl border border-ink-700 bg-ink-950 px-4 py-3.5
+      text-base text-cream placeholder:text-muted
+      focus:border-gold-500 focus:outline-none focus:ring-2 focus:ring-gold-500/30;
+  }
+}
